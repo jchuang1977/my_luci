@@ -137,6 +137,7 @@ define Package/luci-app-diag-devinfo/conffiles
 endef
 
 # new package from 981213
+$(eval $(call application,vsftpd,FTP Server,vsftpd-pam))
 $(eval $(call application,webshell,webshell configuration module))
 $(eval $(call application,mjpg-streamer,mjpg streamer luci page,mjpg-streamer))
 $(eval $(call application,aria2,LuCI Support for aria2,aria2 curl wget openssl-util))
